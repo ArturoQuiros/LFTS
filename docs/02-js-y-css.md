@@ -37,3 +37,17 @@ Y luego agregamos la hoja de estilo a la ruta
 ```
 <link rel= "stylesheet" href="/app.css">
 ```
+
+## Agregando JS
+
+Vamos a la ruta `public` y al archivo **app.js** y ahi pondremos el codigo
+
+```
+alert ("Hello World!")
+```
+
+Y luego agregamos la hoja de estilo a la ruta
+
+```
+<script src="/app.js"> </script>
+```
