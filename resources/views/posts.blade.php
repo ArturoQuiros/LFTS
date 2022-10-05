@@ -1,7 +1,7 @@
 <!doctype html>
 
 <title>My Blog</title>
-<link rel= "stylesheet" href="/app.css">
+<link rel="stylesheet" href="/app2.css">
 
 
 
@@ -26,3 +26,6 @@
     </article>
 
 </body>
+
+
+</html>
