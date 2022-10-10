@@ -1,31 +1,17 @@
-<!doctype html>
-
-<title>My Blog</title>
-<link rel="stylesheet" href="/app2.css">
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
 <body>
+    <?php foreach ($posts as $post) : ?>
     <article>
-
-        <h1> <a href="/posts/my-first-post"> My First Post</a></h1>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta alias sit dolore, recusandae harum, itaque eaque mollitia consequuntur molestiae reprehenderit iure. Quas ipsa aliquid rerum porro, asperiores veritatis. Corporis, alias.</p>
-
+        <?= $post; ?>
     </article>
-    <article>
-
-        <h1> <a href="/posts/my-second-post">  My Second Post </a></h1>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta alias sit dolore, recusandae harum, itaque eaque mollitia consequuntur molestiae reprehenderit iure. Quas ipsa aliquid rerum porro, asperiores veritatis. Corporis, alias.</p>
-
-    </article>
-    <article>
-
-        <h1> <a href="/posts/my-third-post">  My Third Post</a></h1>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta alias sit dolore, recusandae harum, itaque eaque mollitia consequuntur molestiae reprehenderit iure. Quas ipsa aliquid rerum porro, asperiores veritatis. Corporis, alias.</p>
-
-    </article>
-
+    <?php endforeach; ?>
 </body>
-
-
 </html>
