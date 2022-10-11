@@ -10,13 +10,15 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $guarded = []; //If we want to make all the fields mass assignable
-
-  
+    protected $guarded = []; 
 
     public function category() 
     {
-        //hasOne, hasMany, belongsTo, belongsToMany
         return $this->belongsTo(Category::class);
+    }
+
+    public function user() 
+    {
+        return $this->belongsTo(User::class);
     }
 }
