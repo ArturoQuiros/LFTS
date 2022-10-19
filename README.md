@@ -74,11 +74,41 @@
 
 ## 5. Search
 
+[1. Search (The Messy Way)](./docs/6-Search/1-messy-way.md)
+
+[2. Search (The Cleaner Way)](./docs/6-Search/2-clean-way.md)
+
 ## 6. Filtering
+
+[1. Advanced Eloquent Query Constraints](./docs/7-filter/1-query.md)
+
+[2. Extract a Category Dropdown Blade Component](./docs/7-filter/2-new-component.md)
+
+[3. Author Filtering](./docs/7-filter/3-author.md)
+
+[4. Merge Category and Search Queries](./docs/7-filter/4-merge.md)
+
+[5. Fix a Confusing Eloquent Query Bug](./docs/7-filter/5-fix.md)
 
 ## 7. Pagination
 
+[1. Laughably Simple Pagination](./docs/8-Pagination/1-pagination.md)
+
 ## 8. Forms and Authentication
+
+[1. Build a Register User Page](./docs/9-Forms-Auth/1-controller.md)
+
+[2. Automatic Password Hashing With Mutators](./docs/9-Forms-Auth/2-hash.md)
+
+[3. Failed Validation and Old Input Data](./docs/9-Forms-Auth/3-validaciones.md)
+
+[4. Show a Success Flash Message](./docs/9-Forms-Auth/4-success.md)
+
+[5. Login and Logout](./docs/9-Forms-Auth/5-log-in-out.md)
+
+[6. Build the Log In Page](./docs/9-Forms-Auth/6-login.md)
+
+[7. Laravel Breeze Quick Peek](./docs/9-Forms-Auth/07.md)
 
 ## 9. Comments
 
