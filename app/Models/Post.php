@@ -12,29 +12,30 @@ class Post extends Model
 
     protected $guarded = []; //If we want to make all the fields mass assignable
 
+    //protected $guarded = ['id']; //All are fillable except id
+
+    //protected $guarded = ['*']; //If we want to block all the fields from being mass-assigned
+
+    // protected $fillable = [ //All these are fillable
+    //     'title',
+    //     'excerpt',
+    //     'body',
+    // ];
+
+    //Alternativa para buscar por slug
+    // public function getRouteKeyName()
+    // {
+    //     return 'slug';
+    // }
 
     protected $with = ['category', 'author'];
 
     public function scopeFilter($query, array $filters)
     {
         $query->when($filters['search'] ?? false, function ($query, $search) {
-            $query->where(fn($query) =>
-                $query->where('title', 'like', '%' . $search . '%')
-                ->orWhere('excerpt', 'like', '%' . $search . '%')
-                ->orWhere('body', 'like', '%' . $search . '%')
-            );
-        });
-
-        $query->when($filters['category'] ?? false, function ($query, $category) {
-            $query->whereHas('category', fn ($query) =>
-                $query->where('slug', $category)
-            );
-        });
-
-        $query->when($filters['author'] ?? false, function ($query, $author) {
-            $query->whereHas('author', fn ($query) =>
-                $query->where('username', $author)
-            );
+            $query->where('title', 'like', '%' . $search . '%')
+            ->orWhere('excerpt', 'like', '%' . $search . '%')
+            ->orWhere('body', 'like', '%' . $search . '%');
         });
     }
 
