@@ -9,7 +9,8 @@
 
     <x-dropdown-item href="/" class="{{request()->routeIs('home') && !request('category') ? 'bg-blue-500 text-white' : ''}}" >All Categories</x-dropdown-item>
     @foreach ($categories as $category)
-        <x-dropdown-item href="/?category={{$category->slug}}"
+        <x-dropdown-item 
+            href="/?category={{$category->slug}}&{{http_build_query(request()->except('category'))}}"
             class="{{isset($currentCategory) && $currentCategory->id === $category->id ? 'bg-blue-500 text-white' : ''}}">
             {{ucwords($category->name)}}
         </x-dropdown-item>
