@@ -27,8 +27,8 @@
                         <x-slot name="trigger">
                             <button class="text-xs font-bold uppercase">Welcome, {{auth()->user()->name}}!</button>
                         </x-slot>
-                        <x-dropdown-item href="/admin/dashboard" class="{{request()->is('/admin/dashboard') ? 'bg-blue-500 text-white' : ''}}">Dashboard</x-dropdown-item>
-                        <x-dropdown-item href="/admin/posts/create" class="{{request()->is('/admin/posts/create') ? 'bg-blue-500 text-white' : ''}}">New Post</x-dropdown-item>
+                        <x-dropdown-item href="/admin/posts" class="{{request()->is('admin/posts') ? 'bg-blue-500 text-white' : ''}}">All Posts</x-dropdown-item>
+                        <x-dropdown-item href="/admin/posts/create" class="{{request()->is('admin/posts/create') ? 'bg-blue-500 text-white' : ''}}">New Post</x-dropdown-item>
                         <x-dropdown-item href="#" x-data="{}" @click.prevent="document.querySelector('#logout-form').submit()">Log Out</x-dropdown-item>
                         <form id="logout-form" action="/logout" method="POST" class="hidden">
                             @csrf
