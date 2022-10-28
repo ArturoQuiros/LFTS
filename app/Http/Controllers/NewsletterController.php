@@ -15,12 +15,11 @@ class NewsletterController extends Controller
     * @param  \Illuminate\Http\Request  $request
     * @return \Illuminate\Http\Response
     */
-    public function __invoke(Request $request)
+    public function __invoke(Newsletter $newsletter)
     {
         request()->validate(['email' => 'required|email']);
 
         try {
-            $newsletter = new Newsletter();
             $newsletter->subscribe(request('email'));
         } catch (Exception $e) {
             throw ValidationException::withMessages([
