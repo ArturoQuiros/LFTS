@@ -19,9 +19,10 @@ class PostFactory extends Factory
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
             'title' => $this->faker->sentence(),
-            'excerpt' => $this->faker->sentence(),
             'slug' => $this->faker->slug(),
-            'body' => $this->faker->paragraph(),
+            'thumbnail' => 'thumbnails/19db31732931019b73bedcf17924f814.jpg',
+            'excerpt' => '<p>' . implode('</p><p>', $this->faker->paragraphs(2)) . '</p>',
+            'body' => '<p>' . implode('</p><p>', $this->faker->paragraphs(6)) . '</p>',
         ];
     }
 }
