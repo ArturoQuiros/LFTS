@@ -112,8 +112,46 @@
 
 ## 9. Comments
 
+[1. Write the Markup for a Post Comment](./docs/10-comments/1.md)
+
+[2. Table Consistency and Foreign Key Constraints](./docs/10-comments/2.md)
+
+[3. Make the Comments Section Dynamic](./docs/10-comments/3.md)
+
+[4. Design the Comment Form](./docs/10-comments/4.md)
+
+[5. Activate the Comment Form](./docs/10-comments/5.md)
+
+[6. Some Light Chapter Clean Up](./docs/10-comments/6.md)
+
 ## 10. Newsletters and APIs
+
+[1. Mailchimp API Tinkering](./docs/11-Newsletters%20and%20APIs/1.md)
+
+[2. Make the Newsletter Form Work](./docs/11-Newsletters%20and%20APIs/2.md)
+
+[3. Extract a Newsletter Service](./docs/11-Newsletters%20and%20APIs/3.md)
+
+[4. Toy Chests and Contracts](./docs/11-Newsletters%20and%20APIs/4.md)
 
 ## 11. Admin Section
 
+[1. Limit Access to Only Admins](./docs/12-Admin/1.md)
+
+[2. Create the Publish Post Form](./docs/12-Admin/2.md)
+
+[3. Validate and Store Post Thumbnails](./docs/12-Admin/3.md)
+
+[4. Extract Form-Specific Blade Components](./docs/12-Admin/4.md)
+
+[5. Extend the Admin Layout](./docs/12-Admin/5.md)
+
+[6. Create a Form to Edit and Delete Posts](./docs/12-Admin/6.md)
+
+[7. Group and Store Validation Logic](./docs/12-Admin/7.md)
+
+[8. All About Authorization](./docs/12-Admin/8.md)
+
 ## 12. Conclusion
+
+[1. Goodbye and Next Steps](./docs/13-Bye/1.md)
